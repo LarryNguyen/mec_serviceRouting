@@ -24,18 +24,16 @@ end
 ##########################################
 ### Dataset
 ##########################################
-N = 7
-U = 10
 # Base station
-#bs_file = CSV.read("dataset/BS_US_PN_Location.csv")
+bs_file = CSV.read("dataset/BS_US_PN_Location.csv")
 #println(bs_file)
-#N = bs_file[1]
+N = bs_file[1]
 sizeN = length(N)
 
 ## User id U
-#user_file = CSV.read("dataset/Twitter_User_US_PN_Location.csv")
+user_file = CSV.read("dataset/Twitter_User_US_PN_Location.csv")
 #println(user_file)
-#U = user_file[1]
+U = user_file[1]
 sizeU = length(U)
 
 ## List of Edge connected with user E_u[nodeId, userId]
